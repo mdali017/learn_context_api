@@ -4,7 +4,7 @@ import { ProductContent } from "../contextAPI";
 
 const NavBar = () => {
   const { cartItems } = useContext(ProductContent);
-  console.log(cartItems);
+  //   console.log(cartItems);
   return (
     <div>
       <header className="bg-white">
@@ -82,6 +82,7 @@ const NavBar = () => {
 
                   <li>
                     <Link
+                      to="/cart"
                       className="text-gray-500 transition hover:text-gray-500/75"
                       href="#"
                     >
